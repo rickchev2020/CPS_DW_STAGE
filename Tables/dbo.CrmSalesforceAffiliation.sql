@@ -33,7 +33,8 @@ CREATE TABLE [dbo].[CrmSalesforceAffiliation]
 [DwInsertProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [DwUpdateDate] [datetime] NOT NULL,
 [DwUpdateUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[DwUpdateProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+[DwUpdateProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Primary_Contact__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[CrmSalesforceAffiliation] ADD CONSTRAINT [PK__CrmSales__832936FA4A02F448] PRIMARY KEY CLUSTERED ([CrmSalesforceAffiliationId]) WITH (FILLFACTOR=90) ON [PRIMARY]
