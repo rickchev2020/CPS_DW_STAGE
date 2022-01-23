@@ -33,6 +33,7 @@ CREATE TABLE [dbo].[BasHr511Add]
 [BEN_SALARY_4] [decimal] (11, 2) NOT NULL,
 [A_FIELD_97] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [A_FIELD_96] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[SalariedOrHourlyIndicator] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[SalariedOrHourlyIndicator] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[EmploymentDesignation] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
 ) ON [PRIMARY]
 GO
