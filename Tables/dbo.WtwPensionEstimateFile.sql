@@ -1,0 +1,42 @@
+CREATE TABLE [dbo].[WtwPensionEstimateFile]
+(
+[WtwPensionEstimateFileId] [int] NOT NULL IDENTITY(1, 1),
+[EffectiveDate] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MiddleName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EmployeeID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SystemID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BirthDate] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ManualCalcFlag] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ErrorStatus] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PlanName] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubplanName] [varchar] (11) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PlanStatus] [varchar] (6) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PlanSubstatus] [varchar] (6) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OrigHireDate] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EmploymentStatus] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EmployementSubstatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CalcSubPlan] [varchar] (11) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc4BenefitService] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc4VestingService] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5BenefitService] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5VestingService] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5NRCD] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5BCD] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5RCALSatBCD] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5VESTDATE] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5QualifiedAggregatePRBBenBenefit] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Calc5J70] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceModifiedDate] [date] NULL,
+[DwSourceName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwInsertDate] [datetime] NOT NULL,
+[DwInsertUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwInsertProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateDate] [datetime] NOT NULL,
+[DwUpdateUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[WtwPensionEstimateFile] ADD CONSTRAINT [PK__WtwPensi__8C7207399B1F9C20] PRIMARY KEY CLUSTERED ([WtwPensionEstimateFileId]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

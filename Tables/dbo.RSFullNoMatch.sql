@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[RSFullNoMatch]
+(
+[ID_TYPE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[CW_ID] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[TITLE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FIRST NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MIDDLE NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LAST NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SUFFIX] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BIRTHDATE] [date] NULL,
+[CLASS_NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ADD1] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ADD2] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CITY] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATE_CODE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZIP] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[COUNTRY] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PHONE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EMAIL] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ACTION_DATE] [date] NULL,
+[DIST_ID] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DIST_NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NOMAIL] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ROSTER_DATE] [date] NULL,
+[etl_row_id] [int] NULL,
+[etl_row_start_date] [datetime] NULL,
+[etl_row_end_date] [datetime] NULL,
+[etl_row_is_current] [int] NOT NULL
+) ON [PRIMARY]
+GO

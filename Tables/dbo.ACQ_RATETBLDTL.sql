@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[ACQ_RATETBLDTL]
+(
+[COMPANY] [smallint] NULL,
+[TABLE_CODE] [char] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[START_DATE] [datetime] NULL,
+[BEG_AGE_YR_SAL] [decimal] (13, 0) NULL,
+[SMOKER] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EMP_RATE] [decimal] (9, 4) NULL,
+[COMP_RATE] [decimal] (9, 4) NULL,
+[FLEX_RATE] [decimal] (9, 4) NULL,
+[COVER_PCT] [decimal] (7, 4) NULL,
+[COVER_AMT] [decimal] (11, 2) NULL,
+[CREATE_DATE] [datetime] NULL,
+[CREATE_TIME] [decimal] (6, 0) NULL,
+[CREATE_USER_ID] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DATE_STAMP] [datetime] NULL,
+[TIME_STAMP] [decimal] (6, 0) NULL,
+[USER_ID] [char] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CT_COMPANY] [smallint] NULL,
+[CT_TABLE_CODE] [char] (4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CT_START_DATE] [datetime] NULL,
+[CT_BEG_AGE_YR_SAL] [decimal] (13, 0) NULL,
+[CT_SMOKER] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CHANGE_TYPE] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PRIMARYKEY] [char] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DwInsertDate] [datetime] NULL,
+[DwInsertUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DwInsertProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DwUpdateDate] [datetime] NULL,
+[DwUpdateUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DwUpdateProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

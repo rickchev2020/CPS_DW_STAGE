@@ -1,0 +1,40 @@
+CREATE TABLE [dbo].[CrmSalesforceAffiliation]
+(
+[CrmSalesforceAffiliationId] [int] NOT NULL IDENTITY(1, 1),
+[Contact_Link__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedById] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedDate] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Employer_Contact__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Employer_ID_Affiliation_c__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Id] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsDeleted] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastModifiedById] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastModifiedDate] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastReferencedDate] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastViewedDate] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Member_Contact__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Name] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__Contact__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__Description__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__EndDate__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__Organization__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__Primary__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__Role__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__StartDate__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npe5__Status__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[npsp__Related_Opportunity_Contact_Role__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Persona__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Portal_Role__c] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SystemModstamp] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceModifiedDate] [date] NULL,
+[DwSourceName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwInsertDate] [datetime] NOT NULL,
+[DwInsertUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwInsertProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateDate] [datetime] NOT NULL,
+[DwUpdateUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[CrmSalesforceAffiliation] ADD CONSTRAINT [PK__CrmSales__832936FA4A02F448] PRIMARY KEY CLUSTERED ([CrmSalesforceAffiliationId]) WITH (FILLFACTOR=90) ON [PRIMARY]
+GO

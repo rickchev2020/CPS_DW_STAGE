@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[AcrEmployerTransaction]
+(
+[AcrEmployerTransactionId] [int] NOT NULL,
+[AcrYear] [int] NOT NULL,
+[EmployerNumber] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[ConfirmationNumber] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[AuthorizedName] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorizedEmail] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorizedEmailConsent] [bit] NOT NULL,
+[CompletedUser] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CompletedOrganization] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CompletedDate] [datetime] NULL,
+[HeadcountResponse] [int] NULL,
+[HeadcountResponseOptedOut] [bit] NULL,
+[AuditInsertProcessName] [nvarchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuditInsertUser] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuditInsertDate] [datetime] NOT NULL,
+[AuditUpdateProcessName] [nvarchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuditUpdateUser] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuditUpdateDate] [datetime] NOT NULL,
+[AuditExportProcessName] [nvarchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuditExportUser] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuditExportDate] [datetime] NULL,
+[DwInsertDate] [datetime] NOT NULL,
+[DwInsertUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwInsertProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateDate] [datetime] NOT NULL,
+[DwUpdateUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO

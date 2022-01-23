@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[RostersIncomingStaffChanges]
+(
+[ID_TYPE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[CW_ID] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[TITLE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FIRST_NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MIDDLE_NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LAST_NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SUFFIX] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BIRTHDATE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CLASS_NAME] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ADDRESS1] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ADDRESS2] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CITY] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATE_CODE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZIP] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[COUNTRY] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATUS] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATUS_ACTION1] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EFFECTIVE_DATE] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DIST_ID] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceModifiedDate] [date] NULL,
+[DwSourceName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwInsertDate] [datetime] NOT NULL,
+[DwInsertUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwInsertProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateDate] [datetime] NOT NULL,
+[DwUpdateUsername] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[DwUpdateProcessName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
